@@ -148,9 +148,29 @@ footer {
    
 }
 
-/* @media {
-    bu kısım sizin ödeviniz. responsive tasarım ile ilgili araştırma yapıp bu kısmı düzenleyiniz.
-} */
+@media (max-width: 500px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .coffee-icon {
+        float: none;
+        margin: 0 auto 15px auto;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .hero {
+        padding: 35px 15px;
+    }
+}
 
 
 
