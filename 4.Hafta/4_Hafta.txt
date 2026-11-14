@@ -1,0 +1,67 @@
+Ders Notu Özet:
+
+Listeler-->
+Sayfamıza herhangi bir listeyi eklemek istediğimizde <li> etiketi yardımıyla ekleyebiliriz:
+
+Sıralı liste:
+<ol type:.. star:..>
+    <li></li>
+    ...
+</ol>
+
+Sırasız liste:
+<ul style: list-style-type..>
+    <li></li>
+    ....
+</ul>
+
+Açıklama yapmak için kullanılan liste:
+
+<dl>
+    <dt>item</dt>
+    ...
+</dl>
+
+Div-span etiketler:
+<div>
+...
+</div>:Sayfada herhangi bir bölümü gruplandırmak için kullanılan etiket. Özel bir anlamı yok.
+
+<span>
+...
+</span>: Herhangi bir nesneye stil özelliği kazandırmak için kapsama amacıyla kullanılır. Özel bir anlamı yoktur.
+
+
+Semantic Tags:
+
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+
+form etiketleri:
+
+Sayfamızda kullanıcıdan alınacak bilgileri form etiketleri yardımıyla oluşturabiliriz.
+
+örneğin;
+
+<form action="register.php">
+
+        <label for="name"></label>
+        <input type="text" name="name">
+    </form>
+</body>
+
+iframe:Herhangi bir html sayfasının içerisine başka bir html sayfasını gömmek için kullandığımız bir etiket.
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/wXqC7aj3ZCQ?si=Zn2U2CZAB-_qF_gq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+

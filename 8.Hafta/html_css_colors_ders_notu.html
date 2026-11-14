@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML ve CSS'te Renk Kullanımı</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.65;
+        color: #263238;
+        background: #f4f7fb;
+      }
+      header {
+        background: #203864;
+        color: white;
+        padding: 32px 8%;
+      }
+      header h1 {
+        margin: 0 0 8px;
+      }
+      main {
+        width: min(950px, 92%);
+        margin: 28px auto;
+      }
+      section {
+        background: white;
+        padding: 22px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 3px 12px rgba(20, 40, 70, 0.08);
+      }
+      h2 {
+        color: #203864;
+        margin-top: 0;
+      }
+      code {
+        background: #eef2f7;
+        padding: 2px 6px;
+        border-radius: 4px;
+        color: #8a2d4d;
+      }
+      pre {
+        background: #172033;
+        color: #f4f7fb;
+        padding: 15px;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      .swatch {
+        min-height: 76px;
+        border-radius: 8px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        padding: 8px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 0 1px 3px #333;
+      }
+      .demo {
+        padding: 18px;
+        border-radius: 8px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+      }
+      .tip {
+        background: #eaf2ff;
+        border-left: 5px solid #3973c6;
+        padding: 14px;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        color: #536273;
+      }
+      @media (max-width: 650px) {
+        .swatches {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML ve CSS'te Renk Kullanımı</h1>
+      <p>Color • HEX • RGB • RGBA • HSL • Opacity</p>
+    </header>
+    <main>
+      <section>
+        <h2>1. Renkler neden kullanılır?</h2>
+        <p>
+          CSS renkleri; yazıların, arka planların ve kenarlıkların görünümünü
+          belirler.
+        </p>
+        <pre>
+p {
+  color: blue;                 /* Yazı rengi */
+  background-color: lightgray; /* Arka plan rengi */
+  border: 2px solid red;       /* Kenarlık rengi */
+}</pre
+        >
+        <p>
+          <code>color</code> yazı rengini, <code>background-color</code> arka
+          plan rengini belirler.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Renk adları (Color Names)</h2>
+        <p>
+          CSS'te <code>red</code>, <code>blue</code>, <code>tomato</code>,
+          <code>orange</code>, <code>purple</code> ve
+          <code>lightgray</code> gibi hazır renk adları kullanılabilir.
+        </p>
+        <div class="swatches">
+          <div class="swatch" style="background: red">red</div>
+          <div class="swatch" style="background: blue">blue</div>
+          <div class="swatch" style="background: tomato">tomato</div>
+          <div
+            class="swatch"
+            style="background: lightgray; color: #222; text-shadow: none"
+          >
+            lightgray
+          </div>
+        </div>
+        <p>Kolaydır ancak her renk tonu için bir isim bulunmaz.</p>
+      </section>
+
+      <section>
+        <h2>3. HEX renk kodu</h2>
+        <p>
+          HEX renkleri onaltılık sayı sistemiyle ifade eder. Başında
+          <code>#</code> bulunur. Genel biçimi <code>#RRGGBB</code> şeklindedir.
+        </p>
+        <ul>
+          <li><b>RR:</b> Kırmızı (Red)</li>
+          <li><b>GG:</b> Yeşil (Green)</li>
+          <li><b>BB:</b> Mavi (Blue)</li>
+        </ul>
+        <pre>
+h1 { color: #ff0000; } /* Kırmızı */
+body { background-color: #ffffff; } /* Beyaz */
+p { color: #000000; } /* Siyah */</pre
+        >
+        <div class="swatches">
+          <div class="swatch" style="background: #ff0000">#FF0000</div>
+          <div class="swatch" style="background: #00aa00">#00AA00</div>
+          <div class="swatch" style="background: #0000ff">#0000FF</div>
+          <div
+            class="swatch"
+            style="background: #ffff00; color: #222; text-shadow: none"
+          >
+            #FFFF00
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. RGB renk modeli</h2>
+        <p>
+          RGB; Red (kırmızı), Green (yeşil) ve Blue (mavi) kelimelerinin baş
+          harflerinden oluşur. Her kanal 0 ile 255 arasında değer alır.
+        </p>
+        <p><b>Yazım biçimi:</b> <code>rgb(red, green, blue)</code></p>
+        <ul>
+          <li><code>rgb(255, 0, 0)</code> = kırmızı</li>
+          <li><code>rgb(0, 255, 0)</code> = yeşil</li>
+          <li><code>rgb(0, 0, 255)</code> = mavi</li>
+          <li><code>rgb(0, 0, 0)</code> = siyah</li>
+          <li><code>rgb(255, 255, 255)</code> = beyaz</li>
+        </ul>
+        <pre>.ornek { color: rgb(255, 0, 0); }</pre>
+        <div class="swatches">
+          <div class="swatch" style="background: rgb(255, 0, 0)">255, 0, 0</div>
+          <div
+            class="swatch"
+            style="background: rgb(0, 255, 0); color: #111; text-shadow: none"
+          >
+            0, 255, 0
+          </div>
+          <div class="swatch" style="background: rgb(0, 0, 255)">0, 0, 255</div>
+          <div
+            class="swatch"
+            style="
+              background: rgb(255, 255, 255);
+              color: #222;
+              text-shadow: none;
+            "
+          >
+            255,255,255
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>5. RGBA: Şeffaflık eklemek</h2>
+        <p>
+          RGBA modeline dördüncü bir değer ekler: Alpha. Alpha 0 ile 1 arasında
+          saydamlık düzeyidir. 0 tamamen şeffaf, 0.5 yarı saydam, 1 tamamen
+          opaktır.
+        </p>
+        <pre>.kutu { background-color: rgba(255, 0, 0, 0.5); }</pre>
+        <div
+          class="demo"
+          style="background: linear-gradient(90deg, #d9e8ff 50%, #f5e1e1 50%)"
+        >
+          <div
+            style="
+              background: rgba(255, 0, 0, 0.5);
+              padding: 18px;
+              border-radius: 6px;
+              color: #222;
+            "
+          >
+            Bu kırmızı arka plan %50 saydamdır.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>6. HSL ve HSLA</h2>
+        <p>HSL rengi üç bileşenle tanımlar:</p>
+        <ul>
+          <li><b>Hue (Ton):</b> Renk açısı, 0–360 derece.</li>
+          <li>
+            <b>Saturation (Doygunluk):</b> Rengin canlılığı, yüzde olarak.
+          </li>
+          <li>
+            <b>Lightness (Açıklık):</b> Açıklık/koyuluk düzeyi, yüzde olarak.
+          </li>
+        </ul>
+        <pre>
+h2 { color: hsl(0, 100%, 50%); }
+.kutu { background-color: hsla(210, 100%, 50%, 0.5); }</pre
+        >
+        <p>
+          Yaklaşık olarak 0° kırmızı, 120° yeşil, 240° mavi tonunu ifade eder.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Opacity özelliği</h2>
+        <p>
+          <code>opacity</code>, HTML elemanının tamamının saydamlık düzeyini
+          ayarlar. Değer 0 ile 1 arasındadır.
+        </p>
+        <pre>.resim { opacity: 0.5; }</pre>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <div
+            class="demo"
+            style="
+              background: #2878c8;
+              color: white;
+              flex: 1;
+              min-width: 110px;
+              opacity: 1;
+            "
+          >
+            opacity: 1
+          </div>
+          <div
+            class="demo"
+            style="
+              background: #2878c8;
+              color: white;
+              flex: 1;
+              min-width: 110px;
+              opacity: 0.5;
+            "
+          >
+            opacity: 0.5
+          </div>
+          <div
+            class="demo"
+            style="
+              background: #2878c8;
+              color: white;
+              flex: 1;
+              min-width: 110px;
+              opacity: 0.2;
+            "
+          >
+            opacity: 0.2
+          </div>
+        </div>
+        <div class="tip">
+          <b>Önemli fark:</b> RGBA ile yalnızca belirtilen renk saydamlaşır.
+          Opacity kullanıldığında elemanın yazısı ve diğer içerikleri de
+          saydamlaşır.
+        </div>
+      </section>
+
+      <section>
+        <h2>8. Aynı rengin farklı yazımları</h2>
+        <p>Aşağıdaki ifadeler yaklaşık olarak aynı mercan tonunu gösterir:</p>
+        <ul>
+          <li>Color name: <code>tomato</code></li>
+          <li>HEX: <code>#ff6347</code></li>
+          <li>RGB: <code>rgb(255, 99, 71)</code></li>
+          <li>RGBA: <code>rgba(255, 99, 71, 0.5)</code> (yarı saydam)</li>
+          <li>HSL: <code>hsl(9, 100%, 64%)</code></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>9. Öğrenci alıştırmaları</h2>
+        <ol>
+          <li>Bir başlığın rengini <code>tomato</code> yapın.</li>
+          <li>Bir paragrafın rengini HEX ile <code>#203864</code> yapın.</li>
+          <li>
+            Bir kutunun arka planını <code>rgb(255, 220, 120)</code> yapın.
+          </li>
+          <li>
+            Bir butona <code>rgba(0, 100, 200, 0.6)</code> arka plan rengi
+            verin.
+          </li>
+          <li>Bir görselin <code>opacity</code> değerini 0.5 yapın.</li>
+          <li>Aynı rengi color name, HEX ve RGB biçiminde yazın.</li>
+        </ol>
+      </section>
+
+     
+    </main>
+    <footer>HTML & CSS • Renkler Ders Notu</footer>
+  </body>
+</html>

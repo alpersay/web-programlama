@@ -1,0 +1,153 @@
+===============================
+CSS
+===============================
+
+1.Css nedir?
+-------------------------------
+Html ile oluşturduğumuz sayfanın görünümünü düzenlemek için kullanılır.
+
+Html sayfanın yapısını,
+Css görünümünü oluşturur.
+
+Css ile,
+-renk
+-yazı tipi
+-yazı boyutu
+-saydamlık
+-boşluk
+-kenarlık
+-genişlik
+-yükseklik
+-hizalama gibi özellikleri değiştirebiliriz.
+
+
+2.Css söz dizimi
+-----------------------------------
+
+seçici {özellik:değer; özellik:değer;...}
+
+selector {propoerty:value; .....}
+
+
+p {color:red; }
+
+3.Inline Css
+----------------------------------
+Css doğrudan etikeyin içine yazılır.
+
+<p style="color:red;">kırmızı yazı</p>
+
+Inline Css sadece bir etikette yapacağımız düzenleme için kullanılır.
+
+
+4.Internal Css 
+----------------------------------
+
+Css, Html dosyasının <head> etiketleri içerinde <style> etiketleri arasına yazılır.
+
+<head>
+...
+    <style>
+        p {color:red;}
+    </style>
+</head>
+
+5.External Css
+----------------------------------
+Css ayrı bir dosyada tutulabilir.
+
+Örneğin style.css 
+
+Html dosyasına da başlamak için head etiketleri içerisine link etiketi yardımıyla oluşturabiliriz.
+
+Aynı Css dosyasını birden fazla Html sayfasında kullanabilirsiniz.
+
+6.Id Selector'ı
+----------------------------------
+
+Kimlik numarası gibi düşünülebilir.
+Bir elemana özel seçim yapmak için id kullanılabilir.
+
+Html:
+
+<h1 id="baslik">Programlama</h1>
+
+CSS:
+
+#baslik {color:blue;}
+
+Not: Bir id aynı sayfada bir elemana özel olmalıdır.
+
+7.Class Selector
+----------------------------------
+
+Birden fazla elemana aynı Css özelliğini eklemek için class kullanabiliriz.
+
+HTML:
+
+<p class="vurgu">Birinci metin</p>
+<p class="vurgu">İkinci metin</p>
+
+
+CSS:
+
+.vurgu {color: green;}
+
+8.Css Öncelikleri
+----------------------------------
+
+Genel olarak daha özel seçiciler daha yüksek önceliğe sahiptir.
+
+inline css
+id selector
+class selector
+element selector
+default browser
+
+Örnek:
+
+<p id="id" class="class">cümle</p>
+
+p {color:red;}
+
+#id {color:blue;} 
+
+.class {color: borwn;}
+
+9.Tarayıcı Varsayılanları
+----------------------------------
+
+Tarayıcı bazı Html elemanlarına kendiliğinden varsayılan stiller verir.
+
+10.Box Model
+----------------------------------
+Bir Html elamanını kutu olarak düşünebiliriz.
+
+Kutu modelinin temel bölümleri:
+
+-Content:Elemanın asıl içeriği
+-Padding:İçerik ile kenarlık arasındaki boşluk
+-Border:Elemanın kenarlığı
+-Margin:Elemanın dışındaki boşluk.
+
+
+11.Width ve Height
+----------------------------------
+
+Genişlik ve yüksekliktir.
+
+Herhangi bir elemanın yükseklik ve genişlik bilgisini düzenleyebiliriz.
+
+12.Box Sizing
+----------------------------------
+
+Bir Html elemanının genişlik ve yükseklik bilgisinin nasıl hesaplanacağını belirler.
+
+box sizing:content box
+box sizing:border box
+
+
+
+
+
+

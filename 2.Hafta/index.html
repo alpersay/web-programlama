@@ -1,0 +1,309 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>Doctype Html sayfasının html 5 standartlarını takip eden bir doküman olduğunu belirtir.  Detay 
+ 
+ Html sayfalarının tüm içerikleri mutlaka  …  etiketi arasına gelmelidir. Html 
+etiketinin 2 alt öğesi vardır. Bunlar  ve  etiketleridir. 
+ 
+**Yandaki örnekte bir html iskeleti oluşturduk. Tüm html 5 standardına uygun web 
+sayfaları bu yapıyı kullanmalıdır. 
+** Html iskeletini Emmet eklentisi ile kolaycana oluşturabilirsiniz. 
+ 
+ 
+ 
+            
+ 
+           
+            
+ 
+           
+ 
+ 
+ Html sayfasının kullandığı harici kaynakların (css ve javascript dosyaları) sayfaya tanıtıldığı 
+kısımdır.  
+Ayrıca sayfanın arama motorları tarafından ulaşılabilir olması için sayfayı tanımlayan özet 
+bilgilerin (meta etiketleri) eklendiği kısımdır. 
+Head etiketinin alt öğeleri title ve meta etiketleridir. 
+ 
+  
+  
+ 
+<title> Sayfa başlığını temsil eder.  &lt;title&gt;Sayfa başlığı</title>  
+<meta> Sayfayı arama motorlarına tanıtmak için kullandığımız etikettir. 
+meta etiket türleri ; 
+ 
+• Title : sayfa başlığı 
+• Description : sayfa açıklaması 
+• Keywords : Anahtar kelimeler 
+• viewport: Responsive tasarım için gerekli 
+• refresh: Sayfa yenileme süresi (saniye) 
+<meta name="”title”" content="”İkü" programlama”=""> 
+<meta name="”description”" content="”Yazılım" kursları”=""> 
+<meta name="”keywords”" content="”asp.net,html,css”"> 
+<meta name="author" content="Büşra Bozoğlu"> 
+<meta name="viewport" content="width=device-width, initial
+scale=1.0"> 
+<meta http-equiv="refresh" content="30"> 
+Detay 
+ 
+<h1> … </h1><h6> Başlık etiketleri </h6><h1>, </h1><h2>, </h2><h3>, </h3><h4>, </h4><h5> ve </h5><h6> olmak üzere 6 tanedir. 
+** Tarayıcılar başlık etiketlerine varsayılan olarak bir font büyüklüğü atarlar ancak buradaki 
+font büyüklüğü önemli değildir çünkü her bir h etiketine atanan font büyüklüğünü css ile 
+değiştirebiliriz.  
+Burada önemli olan h etiketlerine yüklenen anlamlardır. Çünkü sitemizi ziyaret eden arama 
+motorları kullanılan h etiketlerine göre yazılara anlam yüklerler. Örneğin; h1 etiketi her bir 
+html sayfasında bir tane olmalıdır ve sayfanın amacını özetleyen en önemli başlık türüdür. 
+** Block etikettir. 
+ 
+ 
+</h6><h1> h1 başlık etiketi </h1> 
+<h2> h1 başlık etiketi </h2> 
+<h3> h1 başlık etiketi </h3> 
+<h4> h1 başlık etiketi </h4> 
+<h5> h1 başlık etiketi </h5> 
+<h6> h1 başlık etiketi </h6> 
+Detay 
+ 
+<p> Paragraf oluşturmak için kullanılır.  
+** içeriğinde bir yazı içeriği olmalıdır.  
+** Block etikettir. 
+** Tarayıcı varsayılanı olarak öncesinde ve sonrasında biraz boşluk bırakılır. 
+** p etiketi içinde başka bir p etiketi oluşturulmamalıdır. Bir alt satıra geçmek için <br> 
+etiketi kullanılır. 
+</p><p> Sayfanın genel başlığı </p> 
+ 
+<h2>Alt başlık 1</h2> 
+<p> 
+       Alt başlık 1 ile alakalı bir paragraf. <br> Buradan itibaren alt 
+satıra geçer. 
+</p> 
+ 
+<h2>Alt başlık 2</h2> 
+<p> 
+       Alt başlık 2 ile alakalı bir paragraf. 
+</p> 
+Detay 
+ 
+<b> ve <strong> Kalın yazı yazmak için kullanılır. 
+** İki etikette kalın yazı yazar ancak <strong> içine aldığımız bilginin öneminin fazla 
+olduğunu belirtmiş oluyoruz. 
+ 
+<b>Komple Uygulamalı Web Geliştirme Kursu</b> 
+<strong>Komple Uygulamalı Web Geliştirme Kursu</strong> 
+Detay 
+ 
+<i> ve <em> Italic yazı yazar. 
+** em etiketi ile bir yazıyı vurgulamış oluyoruz. 
+ 
+<i>italic yazı</i> 
+<em>vurgulanmış içerik</em> 
+ 
+<u>, <ins> ,<del> <u> ve <ins> altı çizili yazı yazar. 
+<del> etiketi ise üstü çizili yazı yazar. 
+** del in kullanım amacı eski bir içeriğin üzerini çizmek ve ins ile yeni bir değer eklendiğini 
+belirtmektir. 
+ 
+<span> indirimde 
+      <del> 125 TL <del> 
+      <ins>  75 TL <ins> 
+</ins></ins></del></del></span> 
+ 
+<ul>, <ol>, <li> <ul> etiketi ile sırasız liste oluşturulur. 
+<ol> etiketi ile sıralı liste oluşturulur. 
+<li> her bir liste elemanını temsil eder. 
+ 
+** Sıralı işlemlerde kullanılır.  
+** Liste işaretleri çok önemli değildir çünkü bunları css ile rahatlıkla değiştirebilir ya da 
+silebiliriz. 
+** Genelde menüleri liste elemanlarıyla oluştururuz. 
+<ul> 
+       <li> liste elemanı 1 </li> 
+       <li> liste elemanı 2 </li> 
+       <li> liste elemanı 3 </li> 
+</ul> 
+ 
+<ol> 
+       <li> liste elemanı 1 </li> 
+       <li> liste elemanı 2 </li> 
+       <li> liste elemanı 3 </li> 
+</ol> 
+Detay 
+ 
+<img> Resim eklemek için kullanılır. 
+src : resmin yolunu belirtir. Yol bilgisayardaki bir resim olabilir ya da internet üzerinden 
+resim adresi olabilir.  
+Alt : resim belirtilen yolda bulunamazsa gösterilecek yazıdır. Ayrıca resmin arama 
+motorlarında bulunması için gereken bir yazıdır. Seo açısından eklenmelidir. 
+ 
+<img src="./Sayfa başlığını temsil eder. _title_Sayfa başlığı_files/resim.png" alt="resme alternatif yazı"> 
+<img src="./Sayfa başlığını temsil eder. _title_Sayfa başlığı_files/action-automobilesautomotive-car-show-173287" alt="resme alternatif yazı"> 
+Detay 
+ 
+<form> Görevi,  ... </form> etiketleri içinde bulunan html kontrolleri aracılığıyla 
+kullanıcılardan toplanan bilgileri server'a göndermektir. 
+ 
+Örneğin bir internet sitesindeki üyelik formunu doldurduğumuzda girdiğimiz bilgileri form 
+nesnesi tarayıcıdan alıp server'a taşır. 
+** Henüz programlama kısmına geçmediğimizden dolayı verilerin nasıl taşınacağını 
+bilmiyoruz şu an sadece form tasarımı ile ilgileniyoruz. 
+ 
+Form Kontrol Türleri ; 
+ 
+<input type="text">   :  Alınacak olan bilgi sözel bir ifade ise kullanılır.  
+Örneğin ; Ad ,adres vb. 
+<input type="radio">   :  Alınacak olan bilgi çoklu seçim içinden sadece birinin seçilmesi 
+istendiğinde kullanılır. Örneğin cinsiyet. 
+<input type="checkbox">   :  Alınacak olan bilgi sunulan alternatifler içinden birden fazla 
+seçim istendiğinde kullanılır. Örneğin hobiler. 
+<select> : Seçenekler arasından sadece birinin seçilmesini istediğimiz zaman kullanılır. 
+Örneğin, şehir seçimi. 
+</select><input type="submit">   :  Formu server'daki web programına gönderecek olan buton. 
+ 
+<form> 
+      Ad:  <input type="text" name="firstname" value="Adınız"><br> 
+     Cinsiyet : <br> 
+     <input type="radio" name="gender" value="male" checked=""> 
+Erkek<br> 
+     <input type="radio" name="gender" value="female"> Kadın<br> 
+ 
+     Şehir :<br> 
+     <select name="city"> 
+         <option value="kocaeli">Kocaeli</option> 
+         <option value="istanbul">İstanbul</option> 
+    </select> 
+    <br> 
+ 
+    <input type="submit" value="Submit"> 
+       
+</form> 
+Detay 
+ 
+ Tablo oluşturmak için kullanılır. 
+• Her satır  ile ifade edilir. 
+• Satır içindeki her kolon <table><tbody><tr><td> ile ifade edilir. 
+• Başlık kolonu </td><th> ile ifade edilir. 
+• Tablo genişliği style="width:100%" ile verilir. 
+• Satır birleştirmek için rowspan kullanılır. 
+• Sütun birleştirmek için colspan kullanılır. 
+ 
+<table style="width:100%"> 
+  <tbody><tr> 
+     <th>Ders</th> 
+     <th>Ders Sayısı</th>  
+     <th>Öğrenci Sayısı</th> 
+  </tr> 
+  <tr> 
+     <td>Programlama I</td> 
+     <td>325</td>  
+     <td>3000</td> 
+  </tr>   
+</tbody></table> 
+ 
+Detay 
+ 
+<a> Link oluşturmak için kullanılır. 
+ 
+</a><a href="https://cats.iku.edu.tr/access/content/group/f35fc564-36f1-4325-b426-2825ee68f884/2.Hafta/url">link yazısı</a> 
+ 
+href : yönlendirilecek kaynak yoludur. 
+target : “_blank” özelliği sayfayı başka segmede açmak için kullanılır. 
+** link için text kullanmak yerine resimde kullanabilirsiniz. 
+     <a href="https://cats.iku.edu.tr/access/content/group/f35fc564-36f1-4325-b426-2825ee68f884/2.Hafta/%E2%80%9Dkucukresim.jpg%E2%80%9D"> 
+            <img src="./Sayfa başlığını temsil eder. _title_Sayfa başlığı_files/”buyukresim.jpg”"> 
+     </a> 
+<a href="http://www.google.com/">ziyaret et</a> 
+ 
+<a href="http://www.google.com/" target="_blank">      
+       ziyaret et  
+</a> 
+ 
+<a href="https://cats.iku.edu.tr/access/content/group/f35fc564-36f1-4325-b426-2825ee68f884/2.Hafta/products.html">Ürünler</a> 
+ 
+<a href="https://cats.iku.edu.tr/access/content/group/f35fc564-36f1-4325-b426-2825ee68f884/2.Hafta/google.com"> 
+  <img src="./Sayfa başlığını temsil eder. _title_Sayfa başlığı_files/resim.jpg" alt="alternatif yazı"> 
+</a> 
+ 
+Detay 
+ 
+<div> Div bir bölme oluşturmak için kullanılır. Örneğin ürünlerin listelendiği bir html 
+sayfasında her bir ürünü bir div içine alabiliriz. Eğer ki 50 tane ürün göstereceksek 
+50 tane div ile ürünlerin her birini sistematik bir şekilde gruplayabiliriz. Bu 
+gruplama sayesinde ortak olarak hareket eden her bir ürün div’ine ortak görüntü 
+özellikleri yani css kodları uygulayabiliriz. 
+Ya da body etiketinden hemen sonra bir div ekleyip tüm içerikleri bir div içine 
+alarak tüm sayfaya bir genişlik uygulayabiliriz. 
+** div etiketide p etiketi gibi bir block etikettir. 
+<div id="container"> 
+          <h1>Halı yıkamada kaliteli hizmet</h1> 
+           <div id="service-1"> 
+ <h2>Kaliteli hizmet</h2> 
+ <img src="https://cats.iku.edu.tr/access/content/group/f35fc564-36f1-4325-b426-2825ee68f884/2.Hafta/dersnotu.html"> 
+ <p>Kocaeli İzmit'de halı yıkamada kaliteli hizmet 
+sunmaktayız.</p> 
+          </div> 
+           <div id="service-2"> 
+    <h2>Halınızı evden teslim alalım</h2> 
+   <img src="https://cats.iku.edu.tr/access/content/group/f35fc564-36f1-4325-b426-2825ee68f884/2.Hafta/dersnotu.html">  
+                <p>Kocaeli İzmit' de çevresinde halınızı evden teslim  
+                       alalım. 
+               </p> 
+         </div>  
+</div> 
+ 
+Detay 
+ 
+<span> Span etiketi bir text içindeki her hangi bir kelime ya da kelime grubuna bir stil 
+kodu eklemek istediğimizde kullandığımız bir etikettir.  
+Inline etiket olduğundan dolayı bir alt satıra geçmez dolayısıyla bir cümle içindeki 
+her hangi bir kelimeyi kolaylıkla span etiketi içine alabiliriz. 
+<p>Kocaeli İzmit' de  
+       <span style="color:red;">halı yıkamada</span> kaliteli  
+        hizmet sunmaktayız. 
+</p> 
+ 
+ 
+Html5 Semantic 
+Etiketler 
+Html5 ile gelen anlamsal etiketler kullanmamız arama motorları açısından büyük 
+önem taşımaktadır. Çünkü oluşturduğumuz içerikleri html semantik etiketler 
+içinde sunuyor olmamız sitemizi indekslemeye gelen arama motorlarına içerik ile 
+alakalı daha anlamsal bilgi sunduğumuzdan dolayı ziyaretçi sayımızı olumlu 
+etkileyecektir. 
+Bazı html5 semantic etiketler :  
+ 
+<header> ,<nav> ,<section>, <article>, <aside>, <figure>, <figcaption>, <footer>, 
+<details>, <summary>, <mark>, <time> 
+ 
+ 
+<article> 
+ <h2>Html nedir?</h2> 
+ <p>Html nedir ve ne amaçla kullanılır, bu yazımızda 
+bulabilirsiniz.</p> 
+ <p> 
+                      Büşra Bozoğlu tarafından  
+                      <time datetime="2018-05-06 19:00">5 Mayıs tarihinde     
+                      yayınlandı.</time> 
+  </p> 
+</article> 
+ 
+Detay 
+ 
+İframe Bir web sayfasının içerisine farklı bir web sayfasını çağırıp, görüntülememize 
+yardımcı olan bir HTML etiketidir.  
+** iframe youtube video’sunu bir siteye eklemek için kullanılabilir. 
+ 
+iframe için tanımlayabileceğimiz özellikler ; 
+     
+src : kaynak yolu (aynı klasör içindeki index.html sayfası ya da başka bir internet    
+      adresi olabilir.) 
+frameborder : çerçeve kenarlık kalınlığı. 
+width : iframe genişliği 
+height : iframe yüksekliği 
+ 
+<iframe src="./Sayfa başlığını temsil eder. _title_Sayfa başlığı_files/saved_resource.html" frameborder="0"> 
+</iframe> 
+ 
+<iframe width="560" height="315" src="./Sayfa başlığını temsil eder. _title_Sayfa başlığı_files/9YYxvVawZdI.html" frameborder="0" allow="autoplay; 
+      encrypted-media" allowfullscreen=""> 
+</iframe> 
+ 
+Detay</time></mark></summary></details></footer></figcaption></figure></aside></article></section></nav></header></span></div></th></tr></tbody></table></li></ol></ul></li></ol></ul></del></ins></u></del></ins></u></em></i></strong></strong></b></body></html>

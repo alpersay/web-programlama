@@ -1,0 +1,106 @@
+============================================
+1.Display
+============================================
+
+Elemanın sayfada nasıl görüneceğini belirler.
+
+A) block, inline, inline-block
+
+block:
+yeni satırdan başlar, satırın tamamını kaplar.
+
+Örnek: div, p 
+
+inline:
+elemanlar aynı satırda yer alır içerikleri kadar yer kaplar.
+
+Örnek: a, strong, span
+
+inline-block:
+elemanlar yan yana durabilir ve width, height ve padding gibi ölçüler alabilir.
+
+B) none, visibility
+
+none:
+display: none özelliği elemanın görününürlüğünü kaldırır. yer tıtmaya da devam etmez.
+
+visibility:hidden
+görününürlüğünü kapatır fakat sayfada yer tutmaya devam eder.
+
+============================================
+2.Combinators-birleştirici seçiciler
+
+Tanım:Html elemanları arasındaki ilişkiye göre seçim yapar.
+
+Descendant combinator (space)
+
+Kutu içindeki bütün paragraflar seçilir ve iç içe olanlar da seçilir.
+
+Child combinator (>)
+Sadece kutu içindeki elemanın çocuğu olan paragraflar seçilir. 
+
+Next sibling combinator (+)
+Aynı ebeveyn içindeki etiketten sonra gelen ilk p kardeşlerini seçer.
+
+Subsequent-sibling combinator (~)
+Aynı ebeveyn içindeki etiketten sonra gelen p kardeşlerini seçer.
+
+<body>
+    <div>konu tekrarı</div>
+
+    <a href="">display-inline-eleman</a>
+    <strong>Programlama</strong>
+    <span>yer tutucu</span>
+
+
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium laudantium quaerat vero voluptas? Recusandae, iusto dicta, non voluptates eligendi ad voluptate quasi, molestias ab praesentium delectus ut fugit sint! Expedita.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur utfacilis inventore culpa, itaque accusantium laboriosam voluptatem possimus amet sed? Sint animi totam fugit. Nostrum et iusto minima vel aspernatur.</p>
+
+        <section><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo porro facere earum dolorem atque, praesentium quas iusto. Facere nisi a inventore fugit quidem, ullam repellat minus aspernatur dolores est sit.</p></section>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quae cum quaerat maxime et illum, minus fuga dicta doloremque repudiandae officiis, quos, assumenda consequatur corrupti illo dolor natus fugiat quis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quae cum quaerat maxime et illum, minus fuga dicta doloremque repudiandae officiis, quos, assumenda consequatur corrupti illo dolor natus fugiat quis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quae cum quaerat maxime et illum, minus fuga dicta doloremque repudiandae officiis, quos, assumenda consequatur corrupti illo dolor natus fugiat quis.</p>
+
+</body>
+
+yukarıdaki body etiketleri içerisinde yer alan p ler üzerinde uygulamasını yaptık.
+
+============================================
+3.Pseudo Classes- Pseudo Elements
+============================================
+
+Pseudo class:Elemanın bir durumu ya da listedeki konumunu seçer. 
+Tek iki nokta üst üste (:) ile yazılır.
+
+:hover  -> fare elemanın üstüne gelince.
+
+:focus  -> input gibi bir elemana odaklanılınca
+
+:first-child  -> elemanın ilk çocuğu
+
+:nth-child  -> belirli sıradaki çocuk
+
+bir sürü pseudo class var inceleyiniz.
+
+
+Pseudo element: Elemanın belirli bir bölümünü biçimlendirir veya css ile önüne/arkasına içerik ekler. Genellikle çift (::) ile kullanılır.
+
+::before ->içerikten önce ekler.
+
+::after ->içerikten sonra ekler.
+
+::first-letter  -> ilk harf
+
+::marker  -> liste elemanlarını seçer.
+
+::before - Insert content before an element
+::after - Insert content after an element
+::marker - Style list item markers
+::selection - Style user-selected text
+::backdrop - Style dialog backdrop
+
+
+

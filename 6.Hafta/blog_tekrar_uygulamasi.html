@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Web Günlüğü | HTML & CSS</title>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="blog_style.css" />
+
+    <!-- INTERNAL CSS: Tek bir özel elemana örnek -->
+    <style>
+      .announcement {
+        border-left: 5px solid #333;
+        padding: 15px 20px;
+        margin-bottom: 30px;
+        background-color: #f3f3f3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container">
+        <p class="site-title">WEB GÜNLÜĞÜ</p>
+        <p class="site-description">
+          HTML, CSS ve web tasarımı üzerine küçük notlar.
+        </p>
+      </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+      <div class="container nav-content">
+        <a href="#anasayfa">Ana Sayfa</a>
+        <a href="#yazilar">Yazılar</a>
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+    </nav>
+
+    <main id="anasayfa" class="container">
+      <!-- INLINE CSS ÖRNEĞİ -->
+      <div class="announcement">
+        <strong>Haftanın konusu:</strong>
+        <span style="color: #b42318"> CSS Box Model ve seçiciler </span>
+      </div>
+
+      <div class="layout">
+        <!-- ANA İÇERİK -->
+        <section id="yazilar" class="posts">
+          <article class="post">
+            <p class="post-category">HTML</p>
+
+            <h1>HTML Öğrenmeye Nereden Başlamalı?</h1>
+
+            <p class="post-meta">11 Ekim 2026 · 5 dk okuma</p>
+
+            <div class="fake-image image-html">HTML</div>
+
+            <p>
+              Bir web sayfası hazırlarken ilk olarak sayfanın yapısını
+              oluştururuz. HTML bize başlıkları, paragrafları, bağlantıları,
+              listeleri ve diğer içerikleri oluşturma imkânı verir.
+            </p>
+
+            <p>
+              HTML'i bir binanın iskeleti gibi düşünebiliriz. Sayfanın hangi
+              bölümlerden oluşacağını HTML ile belirleriz.
+            </p>
+
+            <a class="read-more" href="#html-yazisi">
+              Yazının devamını oku →
+            </a>
+          </article>
+
+          <article class="post">
+            <p class="post-category">CSS</p>
+
+            <h2>CSS ile Sayfamızı Güzelleştirmek</h2>
+
+            <p class="post-meta">10 Ekim 2026 · 6 dk okuma</p>
+
+            <div class="fake-image image-css">CSS</div>
+
+            <p>
+              HTML sayfanın yapısını oluşturduktan sonra CSS kullanarak bu
+              yapının görünümünü değiştirebiliriz. Renkler, yazı boyutları,
+              boşluklar ve kenarlıklar CSS ile kontrol edilebilir.
+            </p>
+
+            <p>
+              CSS'in temel mantığını anlamanın en önemli adımlarından biri
+              seçicileri ve Box Model'i öğrenmektir.
+            </p>
+
+            <a class="read-more" href="#css-yazisi"> Yazının devamını oku → </a>
+          </article>
+
+          <article class="post">
+            <p class="post-category">CSS</p>
+
+            <h2>Margin ve Padding Arasındaki Fark</h2>
+
+            <p class="post-meta">08 Ekim 2026 · 4 dk okuma</p>
+
+            <div class="fake-image image-box">BOX MODEL</div>
+
+            <p>
+              CSS Box Model içinde content, padding, border ve margin kavramları
+              bulunur. Bu dört kavramı anlayabilmek, sayfa düzenini kontrol
+              etmek için oldukça önemlidir.
+            </p>
+
+            <a class="read-more" href="#box-model"> Yazının devamını oku → </a>
+          </article>
+        </section>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+          <section id="hakkimda" class="sidebar-box">
+            <h2>Hakkımda</h2>
+
+            <div class="profile-circle">WB</div>
+
+            <p>
+              Merhaba! Bu blogda web programlama öğrenirken tuttuğum küçük
+              notları paylaşıyorum.
+            </p>
+
+            <p>HTML ile başladım, şimdi CSS öğreniyorum.</p>
+          </section>
+
+          <section class="sidebar-box">
+            <h2>Kategoriler</h2>
+
+            <ul class="category-list">
+              <li>
+                <a href="#">HTML <span>(8)</span></a>
+              </li>
+              <li>
+                <a href="#">CSS <span>(12)</span></a>
+              </li>
+              <li>
+                <a href="#">Web Tasarımı <span>(5)</span></a>
+              </li>
+              <li>
+                <a href="#">Uygulamalar <span>(7)</span></a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="sidebar-box">
+            <h2>Son Yazılar</h2>
+
+            <ol class="recent-posts">
+              <li><a href="#">CSS seçicilerini anlamak</a></li>
+              <li><a href="#">Box Model nedir?</a></li>
+              <li><a href="#">HTML listeleri</a></li>
+              <li><a href="#">Semantik HTML</a></li>
+            </ol>
+          </section>
+        </aside>
+      </div>
+
+      <!-- TABLE: HTML tekrarına dahil -->
+      <section class="content-box">
+        <h2>Bu Haftanın Çalışma Programı</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Gün</th>
+              <th>Konu</th>
+              <th>Çalışma</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Pazartesi</td>
+              <td>HTML</td>
+              <td>Tekrar</td>
+            </tr>
+
+            <tr>
+              <td>Çarşamba</td>
+              <td>CSS</td>
+              <td>Seçiciler</td>
+            </tr>
+
+            <tr>
+              <td>Cuma</td>
+              <td>CSS</td>
+              <td>Box Model</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- FORM: HTML tekrarına dahil -->
+      <section id="iletisim" class="content-box contact-box">
+        <h2>İletişim</h2>
+
+        <p>
+          Blog hakkında bir mesaj bırakmak istersen aşağıdaki formu
+          kullanabilirsin.
+        </p>
+
+        <form>
+          <label for="name">Ad Soyad</label>
+          <input type="text" id="name" placeholder="Adınızı yazın" />
+
+          <label for="email">E-posta</label>
+          <input type="email" id="email" placeholder="E-posta adresiniz" />
+
+          <label for="message">Mesaj</label>
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Mesajınızı yazın"
+          ></textarea>
+
+          <button type="submit">Gönder</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© 2026 Web Günlüğü · HTML + CSS Uygulaması</p>
+
+        <a href="#anasayfa">Yukarı çık ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
