@@ -1,4 +1,4 @@
-# web-programlama
+# programlama
 
 [2.Hafta](2.Hafta)  
 
