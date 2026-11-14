@@ -4,7 +4,7 @@
 
 [3.Hafta](3.Hafta)  
 
-[4.Hafta Movie-App](4.Hafta/movie-app)  
+[4.Hafta Movie-App](4.Hafta/movie-app/uygulama)  
 
 [5.Hafta Blog](5.Hafta)  
 
